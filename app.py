@@ -8,13 +8,13 @@ from sklearn.preprocessing import MinMaxScaler
 import random
 from sklearn.preprocessing import LabelEncoder
 # Create flask app
-app = Flask(__name__,template_folder='Templates')
+app = Flask(__name__,template_folder='templates')
 @app.route("/", methods=['POST','GET'])
 
 def Home():
     return render_template("index.html")
 
-@app.route('/predict', methods=['POST','GET'])
+@app.route('/predict', methods=['POST'])
 def predict():
 	
     p2 = request.form.get("p2")
