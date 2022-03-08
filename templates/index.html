@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>ML API-chiranjeevi</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+ <div class="login">
+	<h1><font color='blue'> Predict annual restaurant Revenue</font> </h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+<form action="/predict" method="POST">
+
+<input type="text" name="p2" placeholder="p2 value" required="required" />
+<input type="text" name="p28" placeholder="p28 value" required="required" />
+<input type="text" name="p6" placeholder="p6 value" required="required" />
+<input type="text" name="Type_FC" placeholder="Type_FC" required="required" />
+<input type="text" name="P21" placeholder="P21" required="required" />
+<input type="text" name="City Group_Big" placeholder="City Group_Big" required="required" />
+<input type="text" name="P29" placeholder="P29" required="required" />
+<input type="text" name="P13" placeholder="P13" required="required" />
+<input type="text" name="Type_IL" placeholder="Type_IL" required="required" />
+
+<button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+prediction:   {{ prediction_revenue }}
+
+ </div>
+
+</body>
+</html>
